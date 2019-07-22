@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-libogg
 pkgver=1.3.3
-pkgrel=4
+pkgrel=5
 pkgdesc="Ogg bitstream and framing library (android)"
 arch=('any')
 url="http://xiph.org"

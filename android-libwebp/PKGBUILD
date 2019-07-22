@@ -5,7 +5,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-libwebp
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="WebP library and conversion tools (android)"
 arch=('any')
 url="https://developers.google.com/speed/webp/"

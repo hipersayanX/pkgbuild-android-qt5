@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-zlib
 pkgver=1.2.11
-pkgrel=2
+pkgrel=3
 pkgdesc="A compression/decompression Library (android)"
 arch=('any')
 url="http://www.zlib.net/"

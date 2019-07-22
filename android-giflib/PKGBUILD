@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-giflib
 pkgver=5.1.9
-pkgrel=2
+pkgrel=3
 pkgdesc="A library for reading and writing gif images (android)"
 arch=('any')
 url="http://sourceforge.net/projects/giflib/"

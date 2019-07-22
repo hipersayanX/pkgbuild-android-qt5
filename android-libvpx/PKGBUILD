@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-libvpx
 pkgver=1.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="VP8 and VP9 codec (android)"
 arch=('any')
 url="http://www.webmproject.org/"

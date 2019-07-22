@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-lame
 pkgver=3.100
-pkgrel=5
+pkgrel=6
 pkgdesc="A high quality MPEG Audio Layer III (MP3) encoder (android)"
 arch=('any')
 url="http://lame.sourceforge.net/"

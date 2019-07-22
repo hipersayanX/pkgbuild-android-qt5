@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-speex
 pkgver=1.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A free codec for free speech (android)"
 arch=(any)
 url="http://www.speex.org"

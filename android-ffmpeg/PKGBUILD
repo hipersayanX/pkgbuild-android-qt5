@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-ffmpeg
 pkgver=4.1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Complete solution to record, convert and stream audio and video (android)"
 arch=('any')
 url="http://ffmpeg.org/"
@@ -17,6 +17,7 @@ depends=("android-${_android_arch}-bzip2"
          "android-${_android_arch}-libwebp"
          "android-${_android_arch}-opus"
          "android-${_android_arch}-speex"
+         "android-${_android_arch}-x264"
          "android-${_android_arch}-zlib")
 options=(!strip !buildflags staticlibs !emptydirs)
 makedepends=('android-environment' 'android-pkg-config' 'yasm')
@@ -92,12 +93,13 @@ build() {
         --disable-indev=v4l2
         --disable-outdev=v4l2
         --enable-libmp3lame
+        --enable-libopus
         --enable-libspeex
         --enable-libtheora
         --enable-libvorbis
         --enable-libvpx
         --enable-libwebp
-        --enable-libopus
+        --enable-libx264
         --enable-zlib"
 
     # Platform specific patches

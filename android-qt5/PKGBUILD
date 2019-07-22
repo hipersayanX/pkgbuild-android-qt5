@@ -26,7 +26,6 @@ depends=('java-runtime-headless-openjdk<=8'
         'apache-ant'
         'android-pkg-config'
         'android-ndk'
-        "android-platform-$ANDROID_MINIMUM_PLATFORM"
         'android-sdk'
         'android-sdk-build-tools'
         'android-sdk-platform-tools')
@@ -68,6 +67,7 @@ prepare() {
     source android-env ${_android_arch}
 
     check_ndk_version_ge_than 18.0
+    check_android_platform
 
     # Platform specific patches.
 

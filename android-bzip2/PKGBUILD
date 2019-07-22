@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-bzip2
 pkgver=1.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A high-quality data compression program (android)"
 arch=('any')
 url="http://sources.redhat.com/bzip2"

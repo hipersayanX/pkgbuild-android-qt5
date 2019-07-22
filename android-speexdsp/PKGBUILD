@@ -4,7 +4,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-speexdsp
 pkgver=1.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="DSP library derived from Speex (android)"
 arch=(any)
 url="http://www.speexdsp.org"
