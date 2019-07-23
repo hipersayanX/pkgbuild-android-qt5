@@ -8,7 +8,7 @@ _android_arch=
 
 pkgname=android-${_android_arch}-qt5
 pkgver=5.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt 5 for Android"
 arch=('any')
 url='https://www.qt.io'
