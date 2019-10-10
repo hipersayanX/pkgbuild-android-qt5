@@ -1,0 +1,29 @@
+android-aom
+android-fontconfig
+android-freetype2
+android-fribidi
+android-gettext *
+android-glib2
+android-gmp
+android-gnutls
+android-graphite
+android-gsm
+android-harfbuzz
+android-libass
+android-libbluray
+android-libffi
+android-libmodplug
+android-libsoxr
+android-libssh
+android-libtasn1
+android-nettle
+android-opencore-amr
+android-openssl
+android-p11-kit
+android-pdcurses *
+android-readline *
+android-sdl2 *
+android-vid.stab
+android-xvidcore
+
+* Have problems compiling

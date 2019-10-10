@@ -3,4 +3,3 @@ src
 *.tar.xz
 *.tar.gz
 *.tar.bz2
-*.sig

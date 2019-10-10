@@ -45,6 +45,7 @@ publish:
 prepare: PKGBUILD
 	pkgname=$$(grep '^pkgname=android-' "$$PWD/PKGBUILD" | sed 's/pkgname=android-$${_android_arch}-//'); \
 	srcUrl=$$(sh -c 'source $$PWD/PKGBUILD; echo $${source[0]}'); \
+	pkgFiles=$$(sh -c 'source $$PWD/PKGBUILD; echo $${source[*]}'); \
 	fileName=$$(basename "$$srcUrl"); \
 	if [ ! -f "$$fileName" ] && [[ ! "$$srcUrl" =~ ^git\+.* ]]; then \
 		$(DOWNLOAD) "$$srcUrl"; \
@@ -56,7 +57,11 @@ prepare: PKGBUILD
 	for arch in $(ARCHS); do \
 		pkgfolder=android-$$arch-$$pkgname; \
 		$(MKDIR) $$pkgfolder; \
-		$(COPY) *.patch $$pkgfolder; \
+		for f in $$pkgFiles; do \
+			if [ -e $$f ]; then \
+				$(COPY) $$f $$pkgfolder; \
+			fi; \
+		done; \
 		$(COPY) .gitignore $$pkgfolder; \
 		$(COPY) android-$$pkgname.install $$pkgfolder/android-$$arch-$$pkgname.install; \
 		$(COPY) PKGBUILD $$pkgfolder; \
