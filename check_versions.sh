@@ -30,7 +30,8 @@ packages=('android-bzip2 bzip2'
           'android-x265 x265'
           'android-xz xz'
           'android-zlib zlib'
-          'mingw-w64-ffmpeg-zeranoe ffmpeg')
+          'mingw-w64-ffmpeg-zeranoe ffmpeg'
+          'weblate-wlc weblate-wlc')
 
 export LC_ALL=C
 
@@ -39,8 +40,8 @@ for package in "${packages[@]}"; do
     pkg_ver=$(grep 'pkgver=' $pkg/PKGBUILD | awk -F'=' '{print $2}')
     pkg_orig=$(echo $package| awk '{print $2}')
     pkg_info=$(pacman -Si $pkg_orig 2>/dev/null)
-    
-    if [ "$?" = 0 ]; then    
+
+    if [ "$?" = 0 ]; then
         pkg_orig_ver=$(echo "${pkg_info}" | grep Version | awk '{print $3}' | cut -d "-" -f1 | cut -d ":" -f2)
         older_ver=$(printf "${pkg_ver}\n${pkg_orig_ver}" | sort -V | head -n 1)
 
