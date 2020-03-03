@@ -3,6 +3,7 @@
 packages=('android-bzip2'
           'android-expat'
           'android-ffmpeg'
+          'android-fribidi'
           'android-giflib'
           'android-l-smash'
           'android-lame'

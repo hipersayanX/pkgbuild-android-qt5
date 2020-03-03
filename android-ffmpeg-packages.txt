@@ -1,7 +1,6 @@
 android-aom
 android-fontconfig
 android-freetype2
-android-fribidi
 android-gettext *
 android-glib2
 android-gmp
@@ -11,13 +10,12 @@ android-gsm
 android-harfbuzz
 android-libass
 android-libbluray
-android-libffi
+android-libffi *
 android-libmodplug
 android-libsoxr
 android-libtasn1
 android-nettle
 android-opencore-amr
-android-openssl
 android-p11-kit
 android-pdcurses *
 android-readline *
