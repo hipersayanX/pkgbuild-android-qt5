@@ -1,9 +1,10 @@
 android-aom
 android-fontconfig
 android-freetype2
+android-freetype2-bootstrap <-
 android-gettext *
 android-glib2
-android-gmp
+android-gmp <-
 android-gnutls
 android-graphite
 android-gsm
@@ -13,7 +14,7 @@ android-libbluray
 android-libffi *
 android-libmodplug
 android-libsoxr
-android-libtasn1
+android-libtasn1 <-
 android-nettle
 android-opencore-amr
 android-p11-kit
