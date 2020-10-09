@@ -31,7 +31,6 @@ packages=('android-bzip2 bzip2'
           'android-x265 x265'
           'android-xz xz'
           'android-zlib zlib'
-          'mingw-w64-ffmpeg-zeranoe ffmpeg'
           'weblate-wlc weblate-wlc')
 
 export LC_ALL=C
